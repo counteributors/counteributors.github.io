@@ -1,0 +1,226 @@
+/* Sections
+		 * --------------------------------------- */
+
+#section0 img,
+#section1 img {
+    margin: 20px 0 0 0;
+    width: 250px;
+}
+
+#section2 img {
+    margin: 20px 0 0 52px;
+}
+
+#section3 img {
+    bottom: 0px;
+    position: absolute;
+    margin-left: -420px;
+}
+
+.intro p {
+    margin: 10px auto;
+    font-size: 1em;
+    max-height: 72px;
+    max-width: 90%;
+}
+
+.intro a {
+    font-size: 1.3em;
+}
+
+.twitter-share-button {
+    position: absolute;
+    z-index: 99;
+    right: 149px;
+    top: 9px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* text-align: left; */
+}
+
+#menu li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: rgba(40, 40, 55, 0.5);
+    color: #FFBC01;
+    border-radius: 5px;
+    font-size: 1.4em;
+}
+
+#menu li a:hover {
+    background-color: rgba(40, 40, 55, 1);
+}
+
+#menu li {
+    padding: 0 10px 0;
+}
+
+#section0 {
+    color: #383831 !important;
+    background-color: #90A552 !important;
+}
+
+.details {
+    width: 60%;
+    height: 200px;
+    z-index: 1;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    color: whitesmoke;
+}
+
+
+/* -------------------------LANGUAGES------------------------- */
+
+
+/* --C++-- */
+
+.cppbox {
+    border: 2px solid #F34B7D;
+}
+
+.nextcpp {
+    border: 1px solid #F34B7D;
+    color: #F34B7D;
+}
+
+.nextcpp:hover {
+    color: white;
+    background-color: #F34B7D;
+}
+
+
+/* --!C++-- */
+
+
+/* --C#-- */
+
+.csharpbox {
+    border: 2px solid #178600;
+}
+
+.nextcsharp {
+    border: 1px solid #178600;
+    color: #178600;
+}
+
+.nextcsharp:hover {
+    color: white;
+    background-color: #178600;
+}
+
+
+/* --!C#-- */
+
+
+/* --python-- */
+
+.pythonbox {
+    border: 2px solid #3572A5;
+}
+
+.nextpython {
+    border: 1px solid #3572A5;
+    color: #3572A5;
+}
+
+.nextpython:hover {
+    color: white;
+    background-color: #3572A5;
+}
+
+
+/* --!python-- */
+
+
+/* --js-- */
+
+.javascriptbox {
+    border: 2px solid #F1E05A;
+}
+
+.nextjavascript {
+    border: 1px solid #F1E05A;
+    color: #F1E05A;
+}
+
+.nextjavascript:hover {
+    color: white;
+    background-color: #F1E05A;
+}
+
+
+/* --!js-- */
+
+
+/* --java-- */
+
+.javabox {
+    border: 2px solid #B07219;
+}
+
+.nextjava {
+    border: 1px solid #B07219;
+    color: #B07219;
+}
+
+.nextjava:hover {
+    color: white;
+    background-color: #B07219;
+}
+
+
+/* --!java-- */
+
+
+/* -------------------------!LANGUAGES------------------------- */
+
+.slide {
+    background-color: #282828;
+}
+
+.next {
+    margin: auto;
+    border-radius: 5px;
+    width: 10%;
+    height: 40px;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.next:hover {
+    cursor: pointer;
+}
+
+.details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.details ul li {
+    padding: 0 5px;
+}
+
+.twitterdiv {
+    margin-top: 4px;
+}
