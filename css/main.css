@@ -51,7 +51,7 @@
     background-color: rgba(40, 40, 55, 0.5);
     color: #FFBC01;
     border-radius: 5px;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 #menu li a:hover {
@@ -74,7 +74,7 @@
     margin: auto;
     border-radius: 10px;
     margin-top: 10px;
-    background-color: white;
+    background: linear-gradient(135deg, rgb(256, 255, 255), rgb(222, 222, 222));
 }
 
 .intro {
@@ -101,6 +101,10 @@
     color: #F34B7D;
 }
 
+.flancpp {
+    background-color: #F34B7D;
+}
+
 .nextcpp:hover {
     color: white;
     background-color: #F34B7D;
@@ -114,6 +118,10 @@
 
 .csharpbox {
     border: 2px solid #178600;
+}
+
+.flancsharp {
+    background-color: #178600;
 }
 
 .nextcsharp {
@@ -136,6 +144,10 @@
     border: 2px solid #3572A5;
 }
 
+.flanpython {
+    background-color: #3572A5;
+}
+
 .nextpython {
     border: 1px solid #3572A5;
     color: #3572A5;
@@ -156,6 +168,10 @@
     border: 2px solid #F1E05A;
 }
 
+.flanjavascript {
+    background-color: #F1E05A;
+}
+
 .nextjavascript {
     border: 1px solid #F1E05A;
     color: #F1E05A;
@@ -174,6 +190,10 @@
 
 .javabox {
     border: 2px solid #B07219;
+}
+
+.flanjava {
+    background-color: #B07219;
 }
 
 .nextjava {
@@ -201,7 +221,7 @@
     border-radius: 5px;
     width: 10%;
     height: 40px;
-    background-color: white;
+    background-color: linear-gradient(135deg, rgb(256, 255, 255), rgb(222, 222, 222));
     margin-top: 20px;
     padding-top: 5px;
 }
@@ -223,4 +243,47 @@
 
 .twitterdiv {
     margin-top: 4px;
+}
+
+.founderslist,
+.featuredlist,
+.social {
+    list-style: none;
+}
+
+.whatwedo p {
+    text-align: justify;
+}
+
+.flan {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.footersection0 {
+    font-size: small;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.footersection0 h2 {
+    font-size: larger;
+}
+
+.footersection1 {
+    width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social li {
+    padding-right: 5px;
 }
