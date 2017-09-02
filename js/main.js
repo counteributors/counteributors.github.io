@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', 'whitesmoke', 'whitesmoke', '#ccddff'],
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#B92B27', 'whitesmoke', '#ccddff'],
         anchors: ['home', 'projects', 'about', 'lastPage'],
         menu: '#menu',
         scrollingSpeed: 1000
