@@ -142,7 +142,7 @@ function next(lang) {
     while (document.getElementsByClassName(`github${lang}`)[0].hasChildNodes()) {
         document.getElementsByClassName(`github${lang}`)[0].removeChild(document.getElementsByClassName(`github${lang}`)[0].lastChild);
     }
-    $(`.github${lang}`).append(`<a class="github-button" href="${prolist[ii].Link+'/fork'}" data-show-count="true" aria-label="Fork ${prolist[ii].Name} on GitHub">Fork</a>`);
+    $(`.github${lang}`).append(`<a class="github-button" href="${prolist[ii].Link+'/fork'}" data-show-count="true" aria-label="Fork ${prolist[ii].Name} on GitHub" target="_blank">Fork</a>`);
     var GitHubButtons = require('github-buttons');
     GitHubButtons.render(".github-button");
 
