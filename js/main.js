@@ -143,10 +143,11 @@ function next(lang) {
         document.getElementsByClassName(`github${lang}`)[0].removeChild(document.getElementsByClassName(`github${lang}`)[0].lastChild);
     }
     $(`.github${lang}`).append(`<a class="github-button" href="${prolist[ii].Link+'/fork'}" data-show-count="true" aria-label="Fork ${prolist[ii].Name} on GitHub" target="_blank">Fork</a>`);
-    var GitHubButtons = require('github-buttons');
-    GitHubButtons.render(".github-button");
-
-
+    (function() {
+        var js = document.createElement("script");
+        js.src = (/^http:/.test(document.location) ? "http" : "https") + "://buttons.github.io/buttons.js";
+        document.getElementsByTagName("head")[0].appendChild(js);
+    })();
     //console.log(prolist[ii].Link);
 }
 
@@ -194,4 +195,9 @@ function selectt() {
             cppflag = true;
         }
     }
+    (function() {
+        var js = document.createElement("script");
+        js.src = (/^http:/.test(document.location) ? "http" : "https") + "://buttons.github.io/buttons.js";
+        document.getElementsByTagName("head")[0].appendChild(js);
+    })();
 }
