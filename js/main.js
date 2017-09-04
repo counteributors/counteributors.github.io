@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $('.preloader').fadeOut(5000); // set duration in brackets 
+});
+
 $(document).ready(function() {
     $('#fullpage').fullpage({
         sectionsColor: ['#1bbc9b', '#4BBFC3', '#B92B27', 'whitesmoke', '#ccddff'],
@@ -142,7 +146,7 @@ function next(lang) {
     while (document.getElementsByClassName(`github${lang}`)[0].hasChildNodes()) {
         document.getElementsByClassName(`github${lang}`)[0].removeChild(document.getElementsByClassName(`github${lang}`)[0].lastChild);
     }
-    $(`.github${lang}`).append(`<a class="github-button" href="${prolist[ii].Link+'/fork'}" data-show-count="true" aria-label="Fork ${prolist[ii].Name} on GitHub" target="_blank">Fork</a>`);
+    $(`.github${lang}`).append(`<a class="github-button" href="${prolist[ii].Link+'/fork'}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ${prolist[ii].Name} on GitHub" target="_blank">Fork</a>`);
     (function() {
         var js = document.createElement("script");
         js.src = (/^http:/.test(document.location) ? "http" : "https") + "://buttons.github.io/buttons.js";
@@ -163,35 +167,35 @@ function selectt() {
             $('#javascripta').html(project[i]['Name']);
             $('#javascriptp').html(project[i]['Description']);
             $(".twitterjavascript").append('<a id="tweetjavscript" class="twitter-share-button" href="https://twitter.com/share" data-text="Check this project" data-url="' + project[i].Link + '" data-hashtags="counteributors" data-via="counteributors">Tweet</a>');
-            $('.githubjavascript').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
+            $('.githubjavascript').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
             jsflag = true;
         } else if (project[i].Language == 'java' && jflag == false) {
             $('#javaa').attr('href', project[i]['Link']);
             $('#javaa').html(project[i]['Name']);
             $('#javap').html(project[i]['Description']);
             $(".twitterjava").append('<a id="tweetjava" class="twitter-share-button" href="https://twitter.com/share" data-text="Check this project" data-url="' + project[i].Link + '" data-hashtags="counteributors" data-via="counteributors">Tweet</a>');
-            $('.githubjava').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
+            $('.githubjava').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
             jflag = true;
         } else if (project[i].Language == 'csharp' && csflag == false) {
             $('#csharpa').attr('href', project[i]['Link']);
             $('#csharpa').html(project[i]['Name']);
             $('#csharpp').html(project[i]['Description']);
             $(".twittercsharp").append('<a id="tweetcsharp" class="twitter-share-button" href="https://twitter.com/share" data-text="Check this project" data-url="' + project[i].Link + '" data-hashtags="counteributors" data-via="counteributors">Tweet</a>');
-            $('.githubcsharp').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
+            $('.githubcsharp').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
             csflag = true;
         } else if (project[i].Language == 'python' && pythonflag == false) {
             $('#pythona').attr('href', project[i]['Link']);
             $('#pythona').html(project[i]['Name']);
             $('#pythonp').html(project[i]['Description']);
             $(".twitterpython").append('<a id="tweetpython" class="twitter-share-button" href="https://twitter.com/share" data-text="Check this project" data-url="' + project[i].Link + '" data-hashtags="counteributors" data-via="counteributors">Tweet</a>');
-            $('.githubpython').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
+            $('.githubpython').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
             pythonflag = true;
         } else if (project[i].Language == 'cpp' && cppflag == false) {
             $('#cppa').attr('href', project[i]['Link']);
             $('#cppa').html(project[i]['Name']);
             $('#cppp').html(project[i]['Description']);
             $(".twittercpp").append('<a id="tweetcpp" class="twitter-share-button" href="https://twitter.com/share" data-text="Check this project" data-url="' + project[i].Link + '" data-hashtags="counteributors" data-via="counteributors">Tweet</a>');
-            $('.githubcpp').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
+            $('.githubcpp').append(`<a class="github-button" href="${project[i].Link+'/fork'}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ${project[i].Name} on GitHub">Fork</a>`);
             cppflag = true;
         }
     }
