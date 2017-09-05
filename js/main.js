@@ -150,6 +150,7 @@ function next(lang) {
     (function() {
         var js = document.createElement("script");
         js.src = (/^http:/.test(document.location) ? "http" : "https") + "://buttons.github.io/buttons.js";
+        $(js).attr('async defer');
         document.getElementsByTagName("head")[0].appendChild(js);
     })();
     //console.log(prolist[ii].Link);
@@ -202,6 +203,7 @@ function selectt() {
     (function() {
         var js = document.createElement("script");
         js.src = (/^http:/.test(document.location) ? "http" : "https") + "://buttons.github.io/buttons.js";
+        $(js).attr('async defer');
         document.getElementsByTagName("head")[0].appendChild(js);
     })();
 }
