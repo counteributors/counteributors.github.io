@@ -31,6 +31,7 @@
     <ul id="menu">
         <li data-menuanchor="home"><a href="#home">Home</a></li>
         <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+        <li data-menuanchor="send-project"><a href="#send-project">Send Project</a></li>
         <li data-menuanchor="about"><a href="#about">About</a></li>
     </ul>
 
@@ -158,8 +159,14 @@
                 <div class="next nextpython text-center" onclick="next('python')">Nope, Next one.</div>
             </div>
         </div>
-        <div class="section text-center" id="section2">
-
+        <div class="section text-center col-md-12" id="section2">
+            <div class="col-md-6 leftside">
+            </div>
+            <form method="POST" action="http://formspree.io/counteributors@gmail.com" class="row sendform col-md-6">
+                <input type="email" name="email" placeholder="Your email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn-4" target="_blank">Send</button>
+            </form>
         </div>
         <div class="section" id="section3">
             <div class="row col-md-12 footersection0">
