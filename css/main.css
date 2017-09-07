@@ -1,5 +1,5 @@
 /* Sections
-		 * --------------------------------------- */
+	 * --------------------------------------- */
 
 #section0 img,
 #section1 img {
@@ -358,4 +358,49 @@ ss {
 
 .social li {
     padding-right: 5px;
+}
+
+.comet {
+    position: absolute;
+    z-index: 1;
+    top: -160px;
+    left: -215px;
+    border-radius: 50%;
+    margin: 200px;
+    background: yellow;
+    width: 3px;
+    height: 2px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(00deg);
+    background: -webkit-radial-gradient(center ellipse, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.83) 47%, rgba(237, 237, 237, 0.63) 100%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.83) 47%, rgba(237, 237, 237, 0.63) 100%);
+    box-shadow: -60px 0px 6px 30px #fff;
+    animation: comet 5s linear infinite;
+}
+
+@keyframes comet {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+        box-shadow: -6px 0px 4px 1px #fff;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.9) 0%, rgba(246, 246, 246, 0.83) 47%, rgba(237, 237, 237, 0.63) 100%);
+    }
+    45% {
+        -webkit-transform: translate(20px, -20px) rotate(30deg);
+        transform: translate(20px, -20px) rotate(30deg);
+        box-shadow: -6px 0px 4px 1px #fff;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, rgba(246, 246, 246, 0.83) 47%, rgba(237, 237, 237, 0.63) 100%);
+    }
+    95% {
+        -webkit-transform: translate(1460px, 130px) rotate(30deg);
+        transform: translate(1460px, 130px) rotate(30deg);
+        box-shadow: -6px 0px 4px 1px #fff;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(246, 246, 246, 0.83) 47%, rgba(237, 237, 237, 0.63) 100%);
+    }
+    100% {
+        -webkit-transform: translate(1460px, 130px) rotate(30deg);
+        transform: translate(1460px, 130px) rotate(30deg);
+        box-shadow: none;
+        background: none;
+    }
 }
