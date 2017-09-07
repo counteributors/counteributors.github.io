@@ -4,7 +4,7 @@ $(window).load(function() {
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#B92B27', 'whitesmoke', '#ccddff'],
+        //sectionsColor: ['#1bbc9b', '#4BBFC3', '#B92B27', 'whitesmoke', '#ccddff'],
         anchors: ['home', 'projects', 'lastPage', 'about'],
         menu: '#menu',
         scrollingSpeed: 1000

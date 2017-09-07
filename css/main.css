@@ -4,7 +4,32 @@
 #section0 img,
 #section1 img {
     margin: 20px 0 0 0;
-    width: 250px;
+    width: 150px;
+}
+
+#section2,
+#section3 {
+    background-color: #111116;
+    font-size: 1em;
+}
+
+ss {
+    color: #f34242;
+    font-size: medium;
+    font-weight: 700;
+}
+
+#section0 p {
+    font-family: 'Reem Kufi', sans-serif;
+    margin-top: 10px;
+}
+
+#section0 .die {
+    color: #E05757;
+}
+
+#section0 .contribute {
+    color: #26A226;
 }
 
 .preloader {
@@ -29,6 +54,13 @@
     bottom: 0px;
     position: absolute;
     margin-left: -420px;
+}
+
+#section3 h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5em;
+    color: springgreen;
+    letter-spacing: 1px;
 }
 
 .intro p {
@@ -77,8 +109,8 @@
 }
 
 #section0 {
-    color: #383831 !important;
-    background-color: #90A552 !important;
+    color: white !important;
+    background-color: #111116 !important;
 }
 
 .details {
@@ -87,13 +119,22 @@
     z-index: 1;
     margin: auto;
     border-radius: 10px;
-    margin-top: 10px;
     background: linear-gradient(135deg, rgb(256, 255, 255), rgb(222, 222, 222));
 }
 
 .intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.langtitle {
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.langtitle img {
+    width: 150px;
 }
 
 .intro h1 {
@@ -227,7 +268,7 @@
 /* -------------------------!LANGUAGES------------------------- */
 
 .slide {
-    background-color: #282828;
+    background-color: #111116 !important;
 }
 
 .next {
@@ -268,6 +309,11 @@
 
 .whatwedo p {
     text-align: justify;
+    color: white;
+}
+
+.socialfooter {
+    margin-top: 40px;
 }
 
 .flan {
@@ -275,6 +321,17 @@
     width: 12px;
     height: 12px;
     display: inline-block;
+}
+
+.conclusion {
+    color: #ffe100;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.conclusion em {
+    font-weight: 700;
 }
 
 .footersection0 {
