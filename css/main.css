@@ -7,10 +7,21 @@
     width: 150px;
 }
 
+@keyframes stars {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
 #section2,
 #section3 {
-    background-color: #111116;
+    background-color: #111116 !important;
     font-size: 1em;
+    background: url(../assets/snow.png);
+    animation: stars 25s linear infinite;
 }
 
 ss {
@@ -111,6 +122,8 @@ ss {
 #section0 {
     color: white !important;
     background-color: #111116 !important;
+    background: url(../assets/snow.png);
+    animation: stars 25s linear infinite;
 }
 
 .details {
@@ -269,6 +282,8 @@ ss {
 
 .slide {
     background-color: #111116 !important;
+    background: url(../assets/snow.png);
+    animation: stars 25s linear infinite;
 }
 
 .next {
