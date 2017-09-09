@@ -507,3 +507,38 @@ ss {
 .leftside {
     width: 100%;
 }
+
+.langtitle {
+    animation: moverrr 10s linear infinite alternate;
+}
+
+@keyframes moverrr {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(40deg);
+        transform: translate(0px, 0px) rotate(40deg);
+    }
+    17% {
+        -webkit-transform: translate(170px, 100px) rotate(80deg);
+        transform: translate(170px, 100px) rotate(80deg);
+    }
+    34% {
+        -webkit-transform: translate(-30px, 100px);
+        transform: translate(-30px, 100px);
+    }
+    51% {
+        -webkit-transform: translate(-30px, -100px) rotate(160deg);
+        transform: translate(-30px, -100px) rotate(160deg);
+    }
+    68% {
+        -webkit-transform: translate(170px, 0px);
+        transform: translate(170px, -100px);
+    }
+    85% {
+        -webkit-transform: translate(100px, 100px);
+        transform: translate(100px, 100px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
