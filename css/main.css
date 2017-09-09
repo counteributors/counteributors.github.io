@@ -166,7 +166,7 @@ ss {
 
 .cppbox:hover,
 .nextcpp:hover {
-    box-shadow: 5px 0px 45px 0px #F34B7D;
+    box-shadow: 0px 0px 20px 0px #F34B7D;
 }
 
 .nextcpp {
@@ -195,7 +195,7 @@ ss {
 
 .csharpbox:hover,
 .nextcsharp:hover {
-    box-shadow: 5px 0px 45px 0px #178600;
+    box-shadow: 0px 0px 20px 0px #178600;
 }
 
 .flancsharp {
@@ -224,7 +224,7 @@ ss {
 
 .pythonbox:hover,
 .nextpython:hover {
-    box-shadow: 5px 0px 45px 0px #3572A5;
+    box-shadow: 0px 0px 20px 0px #3572A5;
 }
 
 .flanpython {
@@ -253,7 +253,7 @@ ss {
 
 .javascriptbox:hover,
 .nextjavascript:hover {
-    box-shadow: 5px 0px 45px 0px #F1E05A;
+    box-shadow: 0px 0px 20px 0px #F1E05A;
 }
 
 .flanjavascript {
@@ -282,7 +282,7 @@ ss {
 
 .javabox:hover,
 .nextjava:hover {
-    box-shadow: 5px 0px 45px 0px #B07219;
+    box-shadow: 0px 0px 20px 0px #B07219;
 }
 
 .flanjava {
@@ -478,6 +478,7 @@ ss {
     border-radius: 5px;
     padding: 10px;
     height: 200px;
+    max-height: 236px;
     align-self: center;
 }
 
@@ -505,9 +506,7 @@ ss {
     box-shadow: 0px 0px 0px 5px #F7F8FA inset;
 }
 
-.leftside {
-    width: 100%;
-}
+.rightside {}
 
 .langtitle {
     animation: moverrr 10s linear infinite alternate;
