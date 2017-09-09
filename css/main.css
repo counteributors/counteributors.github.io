@@ -451,6 +451,7 @@ ss {
     flex-direction: column;
     margin: 0 auto;
     width: 70%;
+    box-shadow: 0px 2px 45px #FCDA2F;
     background-color: #FCDA2F;
     padding: 30px;
     color: #000000;
@@ -516,6 +517,7 @@ ss {
     0% {
         -webkit-transform: translate(0px, 0px) rotate(40deg);
         transform: translate(0px, 0px) rotate(40deg);
+        transform: rotateY(0deg);
     }
     17% {
         -webkit-transform: translate(170px, 100px) rotate(80deg);
@@ -528,6 +530,7 @@ ss {
     51% {
         -webkit-transform: translate(-30px, -100px) rotate(160deg);
         transform: translate(-30px, -100px) rotate(160deg);
+        transform: rotateZ(90deg);
     }
     68% {
         -webkit-transform: translate(170px, 0px);
@@ -540,5 +543,6 @@ ss {
     100% {
         -webkit-transform: translate(0px, 0px);
         transform: translate(0px, 0px);
+        transform: rotateX(180deg);
     }
 }
