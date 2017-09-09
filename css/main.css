@@ -164,7 +164,8 @@ ss {
     border: 2px solid #F34B7D;
 }
 
-.cppbox:hover {
+.cppbox:hover,
+.nextcpp:hover {
     box-shadow: 5px 0px 45px 0px #F34B7D;
 }
 
@@ -192,7 +193,8 @@ ss {
     border: 2px solid #178600;
 }
 
-.csharpbox:hover {
+.csharpbox:hover,
+.nextcsharp:hover {
     box-shadow: 5px 0px 45px 0px #178600;
 }
 
@@ -220,7 +222,8 @@ ss {
     border: 2px solid #3572A5;
 }
 
-.pythonbox:hover {
+.pythonbox:hover,
+.nextpython:hover {
     box-shadow: 5px 0px 45px 0px #3572A5;
 }
 
@@ -248,7 +251,8 @@ ss {
     border: 2px solid #F1E05A;
 }
 
-.javascriptbox:hover {
+.javascriptbox:hover,
+.nextjavascript:hover {
     box-shadow: 5px 0px 45px 0px #F1E05A;
 }
 
@@ -276,7 +280,8 @@ ss {
     border: 2px solid #B07219;
 }
 
-.javabox:hover {
+.javabox:hover,
+.nextjava:hover {
     box-shadow: 5px 0px 45px 0px #B07219;
 }
 
