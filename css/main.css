@@ -164,6 +164,10 @@ ss {
     border: 2px solid #F34B7D;
 }
 
+.cppbox:hover {
+    box-shadow: 5px 0px 45px 0px #F34B7D;
+}
+
 .nextcpp {
     border: 1px solid #F34B7D;
     color: #F34B7D;
@@ -186,6 +190,10 @@ ss {
 
 .csharpbox {
     border: 2px solid #178600;
+}
+
+.csharpbox:hover {
+    box-shadow: 5px 0px 45px 0px #178600;
 }
 
 .flancsharp {
@@ -212,6 +220,10 @@ ss {
     border: 2px solid #3572A5;
 }
 
+.pythonbox:hover {
+    box-shadow: 5px 0px 45px 0px #3572A5;
+}
+
 .flanpython {
     background-color: #3572A5;
 }
@@ -236,6 +248,10 @@ ss {
     border: 2px solid #F1E05A;
 }
 
+.javascriptbox:hover {
+    box-shadow: 5px 0px 45px 0px #F1E05A;
+}
+
 .flanjavascript {
     background-color: #F1E05A;
 }
@@ -258,6 +274,10 @@ ss {
 
 .javabox {
     border: 2px solid #B07219;
+}
+
+.javabox:hover {
+    box-shadow: 5px 0px 45px 0px #B07219;
 }
 
 .flanjava {
