@@ -1,5 +1,5 @@
 $(window).load(function() {
-    $('.preloader').fadeOut(5000); // set duration in brackets 
+    $('.preloader').fadeOut(2000); // set duration in brackets 
 });
 
 $(document).ready(function() {
