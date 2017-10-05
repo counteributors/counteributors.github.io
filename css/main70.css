@@ -37,3 +37,9 @@
     width: 100% !important;
     margin: 5 auto !important;
 }
+
+@media screen and (max-width:320px) {
+    .sub {
+        margin-bottom: -5 !important;
+    }
+}
