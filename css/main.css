@@ -175,3 +175,12 @@ body {
 .cpp:hover {
     box-shadow: 0px 0px 5px 0px #F34B7D;
 }
+
+@media screen and (max-width:320px) {
+    .sub {
+        margin-bottom: -5 !important;
+    }
+    .header label {
+        margin-bottom: -5;
+    }
+}

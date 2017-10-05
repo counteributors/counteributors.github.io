@@ -42,4 +42,7 @@
     .sub {
         margin-bottom: -5 !important;
     }
+    .header label {
+        margin-bottom: -5;
+    }
 }
