@@ -1,0 +1,28 @@
+.container {
+    width: 90% !important;
+    padding-left: 10% !important;
+}
+
+.col-md-3,
+.col-md-2,
+.col-md-6 {
+    padding-top: 10px;
+    background-color: rgba(206, 206, 206, 0.76);
+    height: 100px;
+    margin: 10px 0px 10 10;
+}
+
+.info {
+    height: 350px;
+    width: 680px !important;
+}
+
+.header {
+    min-width: 420px;
+    max-width: 420px;
+}
+
+.proj {
+    height: 230px;
+    width: 100%;
+}

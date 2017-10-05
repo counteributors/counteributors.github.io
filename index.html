@@ -14,285 +14,61 @@
     <meta property="og:image:height" content="1024">
     <meta name="twitter:site" content="@counteributors">
     <meta property="og:site_name" content="Counteributors">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#EC75i2">
+    <meta http-equiv="Cache-control" content="public">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" media='screen and (min-width: 991px) and (max-width: 1186px)' href="css/main86.css">
+    <link rel="stylesheet" media='screen and (min-width: 470px) and (max-width: 990px)' href="css/main92.css">
+    <link rel="stylesheet" media='screen and (max-width: 481px)' href="css/main70.css">
     <link href="css/main.css" rel="stylesheet">
-    <link defer async href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-    <link defer async href="css/fullPage.js/2.9.4/jquery.fullpage.min.css" rel="stylesheet">
-    <link defer async href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
-    <link defer async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    <link defer async rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link defer async href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
-</head>
+
 </head>
 
 <body>
-    <div class="comet"></div>
-
-    <section class="preloader">
-        <img class="text-center" src="assets/Infinity.svg">
-        <img class="text-center" src="assets/counter.png" style="width:20%">
-    </section>
-
-    <ul id="menu">
-        <li data-menuanchor="home"><a href="#home">Home</a></li>
-        <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
-        <li data-menuanchor="send-project"><a href="#send-project">Send Project</a></li>
-        <li data-menuanchor="about"><a href="#about">About</a></li>
-    </ul>
-
-    <div id="fullpage">
-
-        <div class="section text-center" id="section0">
-            <img src="assets/counter.png" alt="fullPage" style="width:250px;" />
+    <div class="container">
+        <div class="col-md-3 info text-center">
+            <img src="https://counteributors.github.io/assets/counter.png" alt="fullPage" style="width:190px;" />
             <p>Don't leave your projects
                 <span class="die">die</span>.<br>Let others <span class="contribute">contribute</span>.</p>
+            <ul class="social text-center">
+                <li>
+                    <a class="github-button" href="https://github.com/counteributors/counteributors" data-size="small" data-icon="octicon-star" data-show-count="true" aria-label="Star counteributors/counteributors on GitHub">Star</a>
+                </li>
+                <li>
+                    <a class="twitter-follow-button" href="https://twitter.com/counteributors" data-size="small" data-show-count="false">
+                          Follow @counteributors</a>
+                </li>
+            </ul>
+            <span>Have Ideas and want to help? <a class="text-center mail" href="mailto:counteributors@gmail.com" target="_blank">mail us</a>
+            </span>
         </div>
-        <div class="section" id="section1">
-            <div class="slide cpp">
-                <div class="intro text-center">
-                    <div class="langtitle col-md-3 text-center">
-                        <img class="img-responsive img-circle cpplogo logos" src="assets/c++.png">
-                    </div>
-                    <div class="cppbox details">
-                        <a href="" class="text-center" id="cppa" target="_blank"></a>
-                        <p class="text-center" id="cppp"></p>
-                        <ul>
-                            <li>
-                                <div class="twittercpp text-center">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="githubcpp text-center">
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="next nextcpp text-center" onclick="select('cpp')">Nope, Next one.</div>
-            </div>
-            <div class="slide csharp">
-                <div class="intro text-center">
-                    <div class="langtitle col-md-3 text-center">
-                        <img class="img-responsive img-circle csharplogo logos" src="assets/csharp.png">
-                    </div>
-                    <div class="csharpbox details">
-                        <a href="" class="text-center" id="csharpa" target="_blank"></a>
-                        <p class="text-center" id="csharpp"></p>
-                        <ul>
-                            <li>
-                                <div class="twittercsharp text-center">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="githubcsharp text-center">
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="next nextcsharp text-center" onclick="next('csharp')">Nope, Next one.</div>
-            </div>
-            <div class="slide java">
-                <div class="intro text-center">
-                    <div class="langtitle col-md-3 text-center">
-                        <img class="img-responsive img-circle javalogo logos" src="assets/java.png">
-                    </div>
-                    <div class="javabox details">
-                        <a href="" class="text-center" id="javaa" target="_blank">FFFF</a>
-                        <p class="text-center" id="javap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, expedita eius. Distinctio, dolor veritatis illum porro ex excepturi itaque expedita dolorem eaque a quidem quia consequuntur. Veniam iusto corrupti repellendus.
-                        </p>
-                        <ul>
-                            <li>
-                                <div class="twitterjava text-center">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="githubjava text-center">
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="next nextjava text-center" onclick="next('java')">Nope, Next one.</div>
-            </div>
-            <div class="slide javascript">
-                <div class="intro text-center">
-                    <div class="langtitle col-md-3 text-center">
-                        <img class="img-responsive img-circle javascriptlogo logos" src="assets/javascript.png">
-                    </div>
-                    <div class="javascriptbox details">
-                        <a href="" class="text-center" id="javascripta" target="_blank">FFFF</a>
-                        <p class="text-center" id="javascriptp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, expedita eius. Distinctio, dolor veritatis illum porro ex excepturi itaque expedita dolorem eaque a quidem quia consequuntur. Veniam iusto corrupti repellendus.</p>
-                        <ul>
-                            <li>
-                                <div class="twitterjavascript  text-center">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="githubjavascript  text-center">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="next nextjavascript text-center" onclick="next('javascript')">Nope, Next one.</div>
-            </div>
-
-            <div class="slide python">
-                <div class="intro text-center">
-                    <div class="langtitle col-md-3 text-center">
-                        <img class="img-responsive img-circle pythonlogo logos" src="assets/python.png">
-                    </div>
-                    <div class="pythonbox details">
-                        <a href="" class="text-center" id="pythona" target="_blank">FFFF</a>
-                        <p class="text-center" id="pythonp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, expedita eius. Distinctio, dolor veritatis illum porro ex excepturi itaque expedita dolorem eaque a quidem quia consequuntur. Veniam iusto corrupti repellendus.</p>
-                        <ul>
-                            <li>
-                                <div class="twitterpython text-center">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="githubpython text-center">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="next nextpython text-center" onclick="next('python')">Nope, Next one.</div>
-            </div>
+        <div class="col-md-2">
+            Don't waste your time searching for your next contribution and stop killing your projects.
         </div>
-        <div class="section text-center col-md-12" id="section2">
-            <form method="POST" action="http://formspree.io/counteributors@gmail.com" class="row sendform col-md-4">
-                <input type="email" name="email" placeholder="Your email">
-                <textarea name="message" placeholder="Your message"></textarea>
-                <button type="submit" class="btn btn-4" target="_blank">Send</button>
+        <div class="col-md-6 header">
+            <form method="POST" action="http://formspree.io/counteributors@gmail.com">
+                <label>
+                <span>E-mail:</span>
+                <input type="email" name="email" placeholder="user@example.com" class="mailinput">
+            </label>
+                <label>
+                    <span>Github project:</span>
+                    <input name="message" placeholder="https://github.com/username/project" class="linkinput">
+
+                </label>
+                <button type="submit" class="sub" target="_blank">Send Project</button>
             </form>
-
-            <div class="col-md-8 rightside">
-                <h1>Before Click Send</h1>
-                <p class="sendpintro">There are some little rules to accept your projects, please read this first: </p>
-            </div>
         </div>
-        <div class="section" id="section3">
-            <div class="row col-md-12 footersection0">
-                <div class="twitterwidget col-md-3">
-                    <a class="twitter-timeline" data-height="270" data-link-color="#111116" href="https://twitter.com/counteributors">Tweets by counteributors</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <div class="whatwedo col-md-3">
-                    <h2>What we do?</h2>
-                    <p>
-                        <ss>scenario1:</ss><br>Wow! it's a good idea, let me code it!<br>After 1 week,<br>Bugs and no time, i'll put it on hold.<br>
-                        <ss>scenario2:</ss><br>I want to contribute in projects!<br>Searching...<br>Searching...<br>all of them so hard and almost complete.<br>
-                        <span class="conclusion">In <em>counteributors</em> we share these projects and let others contribute in them, don't waste your time searching for your next contribution and stop killing your projects.</span></p>
-                    <a class="text-center" href="mailto:counteributors@gmail.com" target="_blank">Mail us</a>
-                </div>
-                <div class="featured col-md-3">
-                    <h2>Featured projects:</h2>
-                    <ul class="featuredlist">
-                        <li>
-                            <span class="flanpython flan"></span>
-                            <a href="#">google</a>
-                        </li>
-                        <li>
-                            <span class="flanjava flan"></span>
-                            <a href="#">google</a>
-                        </li>
-                        <li>
-                            <span class="flanjavascript flan"></span>
-                            <a href="#">google</a>
-                        </li>
-                        <li>
-                            <span class="flancpp flan"></span>
-                            <a href="#">google Lorem ipsum dolor sit. </a>
-                        </li>
-                        <li>
-                            <span class="flancsharp flan"></span>
-                            <a href="#">google</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="founders col-md-3">
-                    <h2>Contributors:</h2>
-                    <ul class="founderslist">
-                        <li><a href="https://www.twitter.com/zeyadetman">@zeyadetman</a></li>
-                        <li><a href="https://www.twitter.com/hassanteager">@hassanteager</a></li>
-                        <li><a href="https://www.twitter.com/ahmedox90">@ahmedox90</a></li>
-                        <li><a href="https://www.twitter.com/ahmeddahy380">@ahmeddahy380</a></li>
-                        <li><a href="https://www.twitter.com/saherabdelaziz">@saherabdelaziz</a></li>
-                        <li><a href="https://www.twitter.com/Zeyad_AlFaris">@Zeyad_AlFaris</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-md-12 socialfooter">
-                    <ul class="social text-center">
-                        <li>
-                            <a class="github-button" href="https://github.com/counteributors/counteributors" data-size="large" data-icon="octicon-star" data-show-count="true" aria-label="Star counteributors/counteributors on GitHub">Star</a>
-                        </li>
-                        <li>
-                            <a class="twitter-follow-button" href="https://twitter.com/counteributors" data-size="large" data-show-count="true">
-                              Follow @counteributors</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="js/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
-    <script src="js/anime.js"></script>
-    <script src="js/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
-    <script src="js/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script>
-        window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-
-            t._e = [];
-            t.ready = function(f) {
-                t._e.push(f);
-            };
-
-            return t;
-        }(document, "script", "twitter-wjs"));
-    </script>
-    <script type="text/javascript">
-        var infolinks_pid = 3035255;
-        var infolinks_wsid = 0;
-    </script>
-    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
-    <script type="text/javascript">
-        (function() {
-            if (window.CHITIKA === undefined) {
-                window.CHITIKA = {
-                    'units': []
-                };
-            };
-            var unit = {
-                "calltype": "async[2]",
-                "publisher": "Counteributors",
-                "width": 550,
-                "height": 250,
-                "sid": "Chitika Default"
-            };
-            var placement_id = window.CHITIKA.units.length;
-            window.CHITIKA.units.push(unit);
-            document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-        }());
-    </script>
-    <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

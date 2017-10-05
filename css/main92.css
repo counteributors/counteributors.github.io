@@ -1,0 +1,39 @@
+.container {
+    width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px !important;
+    margin: 5 auto !important;
+}
+
+.col-md-3,
+.col-md-2,
+.col-md-6 {
+    padding-top: 10px;
+    background-color: rgba(206, 206, 206, 0.76);
+    height: 100px;
+    margin: 10px 0px 10 10;
+}
+
+.info {
+    height: 350px;
+    width: 680px !important;
+    margin: 5 auto !important;
+}
+
+.header {
+    min-width: 420px;
+    max-width: 420px;
+    margin: 5 auto !important;
+}
+
+.col-md-2 {
+    margin: 5 auto !important;
+}
+
+.proj {
+    height: 230px;
+    width: 200px;
+    margin: 5 auto !important;
+}
