@@ -52,6 +52,27 @@ var project = [{
         Description: 'Remove Duplicated files.',
         Link: 'https://github.com/zeyadetman/RemoveDuplicateFiles',
         Language: 'python'
+    }, {
+        Name: 'Journal',
+        Description: 'A note taking application that is heavily inspired by OneNote.',
+        Link: 'https://github.com/lordadamson/Journal',
+        Language: 'cpp'
+    },
+    {
+        Name: "latexCalculator",
+        Description: "This is a calculator that formats mathmatical expressions in the way you would normally write them down with pen and paper",
+        Link: "https://github.com/lordadamson/latexCalculator",
+        Language: "javascript"
+    }, {
+        Name: "Ketabuk",
+        Description: "This is a website based on a philosophy.",
+        Link: "https://github.com/ketabuk/Start-Here",
+        Language: "javascript"
+    }, {
+        Name: "mini-express-boilerplate",
+        Description: "A minimal Express boilerplate with passport user authentication, mongoose and some security setup configured",
+        Link: "https://github.com/Fcmam5/mini-express-boilerplate",
+        Language: "javascript"
     }
 ];
 
