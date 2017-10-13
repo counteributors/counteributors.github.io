@@ -18,12 +18,6 @@ var text = "";
 var res = [];
 var res2 = [];
 var project = [{
-        Name: "ImageQuantization",
-        Description: "Quantize images , Reducing their size effectively without affect image Quality",
-        Link: "https://github.com/hassangamal/ImageQuantization",
-        Language: "csharp"
-    },
-    {
         Name: "Calculator",
         Description: "Calculator",
         Link: "https://github.com/zeyadetman/Calculator",
