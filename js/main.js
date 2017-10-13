@@ -24,69 +24,39 @@ var project = [{
         Language: "csharp"
     },
     {
-        Name: "Chess",
-        Description: "Chess Game",
-        Link: "https://github.com/hassangamal/ImageQuantization",
-        Language: "cpp"
-    },
-    {
-        Name: "Mario",
-        Description: "Mario Game",
-        Link: "https://github.com/hassangamal/ImageQuantization",
-        Language: "java"
-    },
-    {
-        Name: "JavaScriptProject",
-        Description: "JS Game",
-        Link: "https://github.com/hassangamal/ImageQuantization",
+        Name: "Calculator",
+        Description: "Calculator",
+        Link: "https://github.com/zeyadetman/Calculator",
         Language: "javascript"
     },
     {
-        Name: "ImageQuantization1",
-        Description: "Quantize images , Reducing their size effectively without affect image Quality",
-        Link: "https://github.com/hassangamal/ImageQuantization",
+        Name: "Image-TextSteganography",
+        Description: "An image steganography by converting the image into text of pixels and use the LSB to hide the ciphered text that encrypted by The Caesar cipher Algorithm (Cryptography). The project decrypt the image by loading it, converting the pixels’ digits and break the LSB.",
+        Link: "https://github.com/zeyadetman/Image-TextSteganography",
         Language: "csharp"
     },
     {
-        Name: "Chess1",
-        Description: "Chess Game",
-        Link: "https://github.com/hassangamal/ImageQuantization",
-        Language: "cpp"
+        Name: "Stars-Todolist",
+        Description: "Convert your stars list to Todo List.",
+        Link: "https://github.com/zeyadetman/Stars-Todolist",
+        Language: "python"
     },
     {
-        Name: "Mario1",
-        Description: "Mario Game",
-        Link: "https://github.com/hassangamal/ImageQuantization",
-        Language: "java"
-    },
-    {
-        Name: "elasticsearch",
-        Description: "Open Source, Distributed, RESTful Search Engine",
-        Link: "https://github.com/elastic/elasticsearch",
-        Language: "java"
-    },
-    {
-        Name: "Leaflet",
-        Description: "🍃 JavaScript library for mobile-friendly interactive maps http://leafletjs.com",
-        Link: "https://github.com/Leaflet/Leaflet",
+        Name: "STOPfacebook",
+        Description: "ChromeExtension to disable pics and videos to save your time",
+        Link: "https://github.com/zeyadetman/STOPfacebook",
         Language: "javascript"
     },
     {
-        Name: "pdf.js",
-        Description: "PDF Reader in JavaScript",
-        Link: "https://github.com/mozilla/pdf.js",
+        Name: "NotifyTweet",
+        Description: "Chrome Extension will notify you if you get a new notification or message on twitter when you on another tab.",
+        Link: "https://github.com/zeyadetman/NotifyTweet",
         Language: "javascript"
     },
     {
-        Name: 'kinto',
-        Description: 'A generic JSON document store with sharing and synchronisation capabilities. http://docs.kinto-storage.org/',
-        Link: 'https://github.com/Kinto/kinto',
-        Language: 'python'
-    },
-    {
-        Name: 'catapult',
-        Description: 'Catapult home for performance tools.',
-        Link: 'https://github.com/catapult-project/catapult',
+        Name: 'RemoveDuplicateFiles',
+        Description: 'Remove Duplicated files.',
+        Link: 'https://github.com/zeyadetman/RemoveDuplicateFiles',
         Language: 'python'
     }
 ];

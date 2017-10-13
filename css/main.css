@@ -124,6 +124,7 @@ body {
     margin-top: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 80px;
 }
 
 .proj .social {
