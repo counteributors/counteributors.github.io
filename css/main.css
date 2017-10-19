@@ -161,6 +161,14 @@ body {
     box-shadow: inset 7px 0px 0px 0px #3572A5;
 }
 
+.html span {
+    color: #E34C26;
+}
+
+.html:hover {
+    box-shadow: inset 7px 0px 0px 0px #E34C26;
+}
+
 .csharp span {
     color: #178600;
 }
