@@ -1,17 +1,30 @@
-window.twttr = (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-    if (d.getElementById(id)) return t;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-    t._e = [];
-    t.ready = function(f) {
-        t._e.push(f);
-    };
-    return t;
-}(document, "script", "twitter-wjs"));
+var projectsList = ['zeyadetman/Calculator', 'HassanAzzam/mysql-no-query', 'zeyadetman/Stars-Todolist', 'zeyadetman/STOPfacebook',
+    'zeyadetman/NotifyTweet', 'Fcmam5/mini-express-boilerplate',
+    'zeyadetman/RemoveDuplicateFiles', 'lordadamson/Journal', 'lordadamson/latexCalculator' /*'ketabuk/Start-Here'*/
+]
+
+
+getterpro();
+
+function getterpro() {
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://api.github.com/search/repositories?q=topic%3Acounteributors",
+        "method": "GET",
+        "headers": {
+            "authorization": "Basic emV5YWRldG1hbjomIzEzNmMxMDI2ODEwN205Nzc0MTA0NzVt"
+        }
+    }
+
+    $.ajax(settings).done(function(response) {
+        for (var to = 0; to < response["items"].length; to++) {
+            projectsList.push(response["items"][to].full_name);
+        }
+    });
+
+}
+
 
 function projectData(params) {
     var settings = {
@@ -48,18 +61,18 @@ function projectData(params) {
     });
 }
 
-var projectsList = ['zeyadetman/Calculator', 'HassanAzzam/mysql-no-query', 'zeyadetman/Image-TextSteganography', 'zeyadetman/Stars-Todolist', 'zeyadetman/STOPfacebook',
-    'zeyadetman/NotifyTweet', 'Fcmam5/mini-express-boilerplate',
-    'zeyadetman/RemoveDuplicateFiles', 'lordadamson/Journal', 'lordadamson/latexCalculator' /*'ketabuk/Start-Here'*/
-]
+
 
 function start() {
-    for (var index = 0; index < projectsList.length; index++) {
-        projectData(projectsList[index]);
-    }
+    setTimeout(function() {
+        for (var index = 0; index < projectsList.length; index++) {
+            projectData(projectsList[index]);
+        }
+    }, 1000);
 }
+
 setTimeout(function() {
     $('<script />', { type: 'text/javascript', src: "https://buttons.github.io/buttons.js" }).appendTo('body');
-}, 1000);
+}, 2000);
 
 start();
