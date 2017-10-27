@@ -36,6 +36,12 @@ a:link {
     margin-right: 0px;
 }
 
+.thanks {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
 .mail {
     color: #210B0D;
 }
