@@ -119,6 +119,7 @@ body {
     margin-bottom: 2px;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 57px;
 }
 
 .proj span {
