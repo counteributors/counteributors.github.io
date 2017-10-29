@@ -1,6 +1,6 @@
 var projectsList = ['zeyadetman/Calculator', 'HassanAzzam/mysql-no-query', 'zeyadetman/Stars-Todolist', 'zeyadetman/STOPfacebook',
     'zeyadetman/NotifyTweet', 'Fcmam5/mini-express-boilerplate',
-    'zeyadetman/RemoveDuplicateFiles', 'lordadamson/Journal', 'lordadamson/latexCalculator' /*'ketabuk/Start-Here'*/
+    'zeyadetman/RemoveDuplicateFiles', 'lordadamson/Journal', 'lordadamson/latexCalculator', 'hima-Megahed/Online-Shopping-Management-System', 'hima-Megahed/Image-Quantization' /*'ketabuk/Start-Here'*/
 ]
 
 
