@@ -3,6 +3,10 @@ var projectsList = ['zeyadetman/Calculator', 'HassanAzzam/mysql-no-query', 'zeya
     'zeyadetman/RemoveDuplicateFiles', 'lordadamson/Journal', 'lordadamson/latexCalculator', 'hima-Megahed/Online-Shopping-Management-System', 'hima-Megahed/Image-Quantization' /*'ketabuk/Start-Here'*/
 ]
 
+var avatars = [
+    {}
+]
+
 
 getterpro();
 
@@ -20,6 +24,9 @@ function getterpro() {
     $.ajax(settings).done(function(response) {
         for (var to = 0; to < response["items"].length; to++) {
             projectsList.push(response["items"][to].full_name);
+            console.log(response["items"][to].owner.avatar_url);
+            avatars[response["items"][to].full_name] = response["items"][to].owner.avatar_url;
+
         }
     });
 
@@ -40,10 +47,16 @@ function projectData(params) {
     $.ajax(settings).done(function(response) {
         //console.log(response);
         var lan = response.language;
+        var ava = "";
+        if(avatars[params] == undefined)
+            ava = `./assets/avatars/${(Math.floor(Math.random() * 8) + 1)}.png` ;
+        else    ava = avatars[params];
         if (lan == 'C++') lan = 'cpp';
         else if (lan == 'C#') lan = 'csharp';
+        console.log(avatars[params]);
         $('.container').append(`
         <div class="col-md-2 proj ${lan}">
+        <img src="${ava}" class="profi">
         <h4><a href="${response.html_url}" target="_blank">${response.name}</a></h4>
         <span>${response.language}</span>
         <p>${response.description}</p>

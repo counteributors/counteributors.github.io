@@ -81,7 +81,12 @@ a:link {
 }
 
 body {
-    background-color: #1a1a1a;
+    /*background-color: #1a1a1a;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/assets/bg.png');
+
 }
 
 .col-md-3,
@@ -89,14 +94,15 @@ body {
 .col-md-6 {
     padding-top: 10px;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 5px;
+    box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
     color: #210B0D;
     height: 100px;
-    margin: 10px 0px 10 10;
+    margin: 25px 0px 10 10;
 }
 
 .info {
-    height: 350px;
+    height: 365px;
     width: 220px;
     padding-top: 20px;
 }
@@ -108,6 +114,7 @@ body {
 
 .col-md-2 {
     width: 220px;
+    
 }
 
 .proj {
@@ -115,11 +122,25 @@ body {
 }
 
 .proj h4 {
-    font-size: 25px;
+    font-size: 1em;
     margin-bottom: 2px;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 57px;
+    max-height: 20px;
+    line-height: unset;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.profi{
+    width:25%;
+    border-radius:50%;
+    object-fit:cover;
+    object-position: center top;
+    transform: translateY(-70%);
+    position: absolute;
+    right: 40%;
+    box-shadow: 8px 5px 20px 0px rgba(46,61,73,0.15);
 }
 
 .proj span {
@@ -148,48 +169,56 @@ body {
     color: #F1E05A !important;
 }
 
-.javascript:hover {
-    box-shadow: inset 7px 0px 0px 0px #F1E05A;
+.javascript {
+    border-top: 5px solid #F1E05A;
 }
 
 .java span {
     color: #B07219;
 }
 
-.java:hover {
-    box-shadow: inset 7px 0px 0px 0px #B07219;
+.java {
+    border-top: 5px solid #B07219;
 }
 
 .python span {
     color: #3572A5;
 }
 
-.python:hover {
-    box-shadow: inset 7px 0px 0px 0px #3572A5;
+.python{
+    border-top: 5px solid #3572A5;
 }
 
 .html span {
     color: #E34C26;
 }
 
-.html:hover {
-    box-shadow: inset 7px 0px 0px 0px #E34C26;
+.html {
+    border-top: 5px solid #E34C26;
+}
+
+.matlab span {
+    color: #E16737;
+}
+
+.matlab {
+    border-top: 5px solid #E16737;
 }
 
 .csharp span {
     color: #178600;
 }
 
-.csharp:hover {
-    box-shadow: inset 7px 0px 0px 0px #178600;
+.csharp {
+    border-top: 5px solid #178600;
 }
 
 .cpp span {
     color: #F34B7D;
 }
 
-.cpp:hover {
-    box-shadow: inset 7px 0px 0px 0px #F34B7D;
+.cpp{
+    border-top: 5px solid #F34B7D;
 }
 
 @media screen and (max-width:320px) {

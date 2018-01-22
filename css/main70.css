@@ -12,7 +12,7 @@
     padding-top: 10px;
     background-color: rgba(206, 206, 206, 0.76);
     height: 100px;
-    margin: 10px 0px 10 10;
+    margin: 25px 0px 10 10;
 }
 
 .info {
@@ -35,7 +35,7 @@
 .proj {
     height: 230px;
     width: 100% !important;
-    margin: 5 auto !important;
+    margin: 35px auto !important;
 }
 
 @media screen and (max-width:320px) {
