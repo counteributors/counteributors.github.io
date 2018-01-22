@@ -173,6 +173,15 @@ body {
     border-top: 5px solid #F1E05A;
 }
 
+.php span {
+    color: #4F5D95 !important;
+}
+
+.php {
+    border-top: 5px solid #4F5D95;
+}
+
+
 .java span {
     color: #B07219;
 }
