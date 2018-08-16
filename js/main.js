@@ -52,7 +52,7 @@ function projectData(params) {
         else ava = avatars[params];
         if (lan == 'C++') lan = 'cpp';
         else if (lan == 'C#') lan = 'csharp';
-        if (avatars[params] !== undefined) {
+        if (!(response.hasOwnProperty('message') && response['message'] === 'Not Found')) {
             $('.container').append(`
         <div class="col-md-2 proj ${lan}">
         <img src="${ava}" class="profi">
@@ -71,7 +71,7 @@ function projectData(params) {
                 twttr.widgets.load();
             } catch (err) {}
         }
-    });
+    }).catch(r => r);
 }
 
 setTimeout(function () {
