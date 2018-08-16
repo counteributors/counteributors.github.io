@@ -52,8 +52,8 @@ function projectData(params) {
         else ava = avatars[params];
         if (lan == 'C++') lan = 'cpp';
         else if (lan == 'C#') lan = 'csharp';
-        console.log(avatars[params]);
-        $('.container').append(`
+        if (avatars[params] !== undefined) {
+            $('.container').append(`
         <div class="col-md-2 proj ${lan}">
         <img src="${ava}" class="profi">
         <h4><a href="${response.html_url}" target="_blank">${response.name}</a></h4>
@@ -67,9 +67,10 @@ function projectData(params) {
         </ul>
         </div>
         `);
-        try {
-            twttr.widgets.load();
-        } catch (err) {}
+            try {
+                twttr.widgets.load();
+            } catch (err) {}
+        }
     });
 }
 
