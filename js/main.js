@@ -8,49 +8,48 @@ var avatars = [
 ]
 
 
-getterpro();
 
-function getterpro() {
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://api.github.com/search/repositories?q=topic%3Acounteributors",
-        "method": "GET",
-        "headers": {
-            "authorization": "Basic emV5YWRldG1hbjomIzEzNmMxMDI2ODEwN205Nzc0MTA0NzVt"
-        }
+const url = 'https://api.github.com/search/repositories?q=topic%3Acounteributors';
+fetch(url, {
+    "async": true,
+    "crossDomain": true,
+    "method": "GET",
+    "headers": {
+        "authorization": "Basic emV5YWRldG1hbjomIzEzNmMxMDI2ODEwN205Nzc0MTA0NzVt"
     }
-
-    $.ajax(settings).done(function(response) {
+}).then(res => res.json())
+    .then(response => {
+        console.log(response);
         for (var to = 0; to < response["items"].length; to++) {
             projectsList.push(response["items"][to].full_name);
             console.log(response["items"][to].owner.avatar_url);
             avatars[response["items"][to].full_name] = response["items"][to].owner.avatar_url;
 
         }
+    })
+    .then(() => {
+        for (var index = 0; index < projectsList.length; index++) {
+            projectData(projectsList[index]);
+        }
     });
 
-}
 
 
 function projectData(params) {
-    var settings = {
+    const url = `https://api.github.com/repos/${params}`;
+    fetch(url, {
         "async": true,
         "crossDomain": true,
-        "url": `https://api.github.com/repos/${params}`,
         "method": "GET",
         "headers": {
             "authorization": "Basic emV5YWRldG1hbjomIzEzNmMxMDI2ODEwN205Nzc0MTA0NzVt"
         }
-    }
-
-    $.ajax(settings).done(function(response) {
-        //console.log(response);
+    }).then(response => response.json()).then(response => {
         var lan = response.language;
         var ava = "";
-        if(avatars[params] == undefined)
-            ava = `./assets/avatars/${(Math.floor(Math.random() * 8) + 1)}.png` ;
-        else    ava = avatars[params];
+        if (avatars[params] == undefined)
+            ava = `./assets/avatars/${(Math.floor(Math.random() * 8) + 1)}.png`;
+        else ava = avatars[params];
         if (lan == 'C++') lan = 'cpp';
         else if (lan == 'C#') lan = 'csharp';
         console.log(avatars[params]);
@@ -63,7 +62,7 @@ function projectData(params) {
         <ul class="text-center social">
         <li><a class="twitter-share-button" href="https://twitter.com/share" data-text="Check this project" data-url="${ response.html_url}" data-hashtags="counteributors" data-via="counteributors">Tweet</a>
         </li>
-        <li><a class="github-button" href="${response.html_url+'/fork'}" data-icon="octicon-repo-forked" data-show-count="false" target="_blank">Fork</a>
+        <li><a class="github-button" href="${response.html_url + '/fork'}" data-icon="octicon-repo-forked" data-show-count="false" target="_blank">Fork</a>
         </li>
         </ul>
         </div>
@@ -74,18 +73,6 @@ function projectData(params) {
     });
 }
 
-
-
-function start() {
-    setTimeout(function() {
-        for (var index = 0; index < projectsList.length; index++) {
-            projectData(projectsList[index]);
-        }
-    }, 1000);
-}
-
-setTimeout(function() {
-    $('<script />', { type: 'text/javascript', src: "https://buttons.github.io/buttons.js" }).appendTo('body');
-}, 2000);
-
-start();
+setTimeout(function () {
+    $('<script />', {type: 'text/javascript', src: "https://buttons.github.io/buttons.js"}).appendTo('body');
+}, 3000);
